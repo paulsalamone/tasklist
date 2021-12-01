@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listee</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/Listee-logo-cropped.png" id="logo" />
+          <h1>a simple task list generator</h1>
+
+    </header>
+
+    <main class="columns is-mobile">
+      <!-- ADD TASK -->
+      <section class="column" id="add-new">
+        <h2>Add new task:</h2>
+        <div class="" id="add-new-box">
+          <form id="add-task-form">
+            <input
+              type="text"
+              id="add-task-input"
+              placeholder="Type some text"
+            />
+            <input class="button is-success is-pulled-right" type="submit" id="add-task-submit" value="+Add Task" />
+          </form>
+        </div>
+      </section>
+      <!-- CURRENT TASKS -->
+      <section class="column" id="current">
+       <div id="current-task-header"><h2>Current tasks:</h1><p>Completed?</p></div>
+        
+        <div class="" id="current-box">
+
+          <div class="task">
+            <div class="task-text">
+              <p>Sample Task Text</p>
+            </div>
+            <div class="task-actions">
+            <button class="button is-info is-small is-light" id="edit"><i class="fas fa-marker"></i></button>
+            <button class="button is-danger is-small is-light" id="delete"><i class="fas fa-trash"></i></button>
+            <button class="button is-success is-small" id="checkbox"><i class="fas fa-check" id="checkbox-icon"></i></button>
+            </div>
+          </div>
+
+                  <div class="task">
+            <div class="task-text">
+              <p>Sample Task Text</p>
+            </div>
+            <div class="task-actions">
+            <button class="button is-info is-small is-light" id="edit"><i class="fas fa-marker"></i></button>
+            <button class="button is-danger is-small is-light" id="delete"><i class="fas fa-trash"></i></button>
+            <button class="button is-success is-small" id="checkbox"><i class="fas fa-check" id="checkbox-icon"></i></button>
+            </div>
+          </div>
+
+
+          
+
+        </div>
+      </section>
+      <!-- COMPLETED TASKS -->
+      <section class="column" id="completed">
+        <h2>Completed tasks:</h2>
+        <div class="" id="completed-box">
+
+        <div class="task">
+            <div class="task-text">
+              <p>Sample Task Text</p>
+            </div>
+            <div class="task-actions">
+            <button class="button is-info is-small is-light" id="edit"><i class="fas fa-marker"></i></button>
+            <button class="button is-danger is-small is-light" id="delete"><i class="fas fa-trash"></i></button>
+            <button class="button is-success is-small" id="checkbox"><i class="fas fa-check" id="checkbox-icon-shown"></i></button>
+            </div>
+          </div>
+
+          
+
+
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer sticky-bottom">
+      <p>  © 2021 Listee • 
+  A Project by Coralee, Angela and Paul (Group 2)</p>
+    </footer>
+        <script src="https://kit.fontawesome.com/465eae0a2f.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+      </body>
+</html>
